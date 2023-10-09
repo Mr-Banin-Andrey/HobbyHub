@@ -11,7 +11,7 @@ import SwiftUI
 struct HobbyHubApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            InfoView()
         }
     }
 }
