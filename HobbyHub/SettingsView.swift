@@ -15,20 +15,23 @@ struct SettingsView: View {
     
     @State private var value = 35.0
     @State private var isChange = false
+    
+    @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
         
         Form {
-            // темный или светый режим
-            Section {
-                Toggle("Темный или светлый", isOn: $darkOn.animation())
-                    .onChange(of: darkOn) { on in
-                        if on {
-                            print("on")
-                        } else {
-                            print("off")
-                        }
-                    }
+            Section() {
+                Text((colorScheme == .dark ? "Dark " : "Light ") + "Theme enabled")
+                    
+//                Toggle("Темный или светлый", isOn: $darkOn.animation())
+//                    .onChange(of: darkOn) { on in
+//                        if on {
+//                            print("on")
+//                        } else {
+//                            print("off")
+//                        }
+//                    }
             }
             // цвет фона
             Section {
