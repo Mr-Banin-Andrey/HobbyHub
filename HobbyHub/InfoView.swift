@@ -13,29 +13,13 @@ struct InfoView: View {
     
     var body: some View {
         
-        if titleOn {
-            NavigationView {
-                List(Post.data) { post in
-                    NavigationLink {
-                        InfoDetails(post: post)
-                    } label: {
-                        InfoRow(post: post)
-                    }
-                }
-                
+        NavigationView {
+            if titleOn {
+                InfoList()
                 .navigationTitle("Хобби")
                 .listStyle(.plain)
-            }
-        } else {
-            NavigationView {
-                List(Post.data) { post in
-                    NavigationLink {
-                        InfoDetails(post: post)
-                    } label: {
-                        InfoRow(post: post)
-                    }
-                }
-                
+            } else {
+                InfoList()
                 .listStyle(.plain)
             }
         }

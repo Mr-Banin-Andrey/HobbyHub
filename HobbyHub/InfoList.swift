@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct InfoList: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(Post.data) { post in
+            NavigationLink {
+                InfoDetails(post: post)
+            } label: {
+                InfoRow(post: post)
+            }
+        }
     }
 }
 

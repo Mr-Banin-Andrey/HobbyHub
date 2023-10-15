@@ -15,6 +15,7 @@
 		9D69CC572AD45CCF00E723BC /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69CC562AD45CCF00E723BC /* HelloView.swift */; };
 		9D69CC592AD45CDD00E723BC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69CC582AD45CDD00E723BC /* SettingsView.swift */; };
 		9D69CC5B2AD46F5200E723BC /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69CC5A2AD46F5200E723BC /* BackgroundColor.swift */; };
+		9DAC75E82ADC3DB700C9163C /* InfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC75E72ADC3DB700C9163C /* InfoList.swift */; };
 		9DB8CD542AD400FA00BAD8D9 /* HobbyHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8CD532AD400FA00BAD8D9 /* HobbyHubApp.swift */; };
 		9DB8CD582AD400FB00BAD8D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8CD572AD400FB00BAD8D9 /* Assets.xcassets */; };
 		9DB8CD5B2AD400FB00BAD8D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8CD5A2AD400FB00BAD8D9 /* Preview Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		9D69CC562AD45CCF00E723BC /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
 		9D69CC582AD45CDD00E723BC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9D69CC5A2AD46F5200E723BC /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
+		9DAC75E72ADC3DB700C9163C /* InfoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoList.swift; sourceTree = "<group>"; };
 		9DB8CD502AD400FA00BAD8D9 /* HobbyHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB8CD532AD400FA00BAD8D9 /* HobbyHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyHubApp.swift; sourceTree = "<group>"; };
 		9DB8CD572AD400FB00BAD8D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				9DB8CD592AD400FB00BAD8D9 /* Preview Content */,
 				9D69CC4D2AD41A0D00E723BC /* Models */,
 				9D69CC4E2AD4400900E723BC /* InfoView.swift */,
+				9DAC75E72ADC3DB700C9163C /* InfoList.swift */,
 				9D69CC502AD448D300E723BC /* InfoRow.swift */,
 				9D69CC522AD44D0200E723BC /* InfoDetails.swift */,
 				9D69CC562AD45CCF00E723BC /* HelloView.swift */,
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D69CC4F2AD4400900E723BC /* InfoView.swift in Sources */,
+				9DAC75E82ADC3DB700C9163C /* InfoList.swift in Sources */,
 				9D69CC592AD45CDD00E723BC /* SettingsView.swift in Sources */,
 				9D69CC4C2AD41A0300E723BC /* Post.swift in Sources */,
 				9D69CC552AD45AF700E723BC /* ContentView.swift in Sources */,
