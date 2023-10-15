@@ -28,7 +28,7 @@ struct SettingsView: View {
             }
             
             Section {
-                Toggle("Title", isOn: $titleView.animation())
+                Toggle("Title", isOn: $titleOn.animation())
                     .onChange(of: titleView) { on in
                         if on {
                             titleOn = true
