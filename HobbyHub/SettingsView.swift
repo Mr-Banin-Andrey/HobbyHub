@@ -9,27 +9,39 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    @State private var darkOn = false
-    
     @State private var selectedColor: BackgroundColor = .blue
     
     @State private var value = 35.0
     @State private var isChange = false
+    
+    @Environment(\.colorScheme) var colorScheme
+    
+    @State private var titleView = true
+    @Binding var titleOn: Bool
+    
 
     var body: some View {
         
         Form {
-            // темный или светый режим
+            Section() {
+                Text((colorScheme == .dark ? "Dark " : "Light ") + "Theme enabled")
+            }
+            
             Section {
-                Toggle("Темный или светлый", isOn: $darkOn.animation())
-                    .onChange(of: darkOn) { on in
+                Toggle("Title", isOn: $titleOn.animation())
+                    .onChange(of: titleView) { on in
                         if on {
-                            print("on")
+                            titleOn = true
                         } else {
-                            print("off")
+                            titleOn = false
                         }
                     }
+                
+                if titleOn {
+                    Text("Navigation title enabled")
+                }
             }
+            
             // цвет фона
             Section {
                 Text("Цвет фона")
@@ -53,5 +65,5 @@ struct SettingsView: View {
 }
 
 #Preview {
-    SettingsView()
+    SettingsView(titleOn: .constant(true))
 }

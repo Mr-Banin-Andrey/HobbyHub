@@ -8,22 +8,24 @@
 import SwiftUI
 
 struct InfoView: View {
+    
+    var titleOn: Bool
+    
     var body: some View {
         
         NavigationView {
-            List(Post.data) { post in
-                NavigationLink {
-                    InfoDetails(post: post)
-                } label: {
-                    InfoRow(post: post)
-                }
+            if titleOn {
+                InfoList()
+                .navigationTitle("Хобби")
+                .listStyle(.plain)
+            } else {
+                InfoList()
+                .listStyle(.plain)
             }
-            .navigationTitle("Хобби")
-            .listStyle(.plain)
         }
     }
 }
 
 #Preview {
-    InfoView()
+    InfoView(titleOn: false)
 }
