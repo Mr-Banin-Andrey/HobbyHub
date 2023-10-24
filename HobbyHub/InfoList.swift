@@ -1,9 +1,3 @@
-//
-//  InfoList.swift
-//  HobbyHub
-//
-//  Created by Андрей Банин on 15.10.23..
-//
 
 import SwiftUI
 

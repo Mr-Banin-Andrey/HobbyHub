@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  HobbyHub
-//
-//  Created by Андрей Банин on 9.10.23..
-//
 
 import SwiftUI
 
@@ -19,9 +13,9 @@ struct ContentView: View {
                     Label("Хобби", systemImage: "list.bullet.circle")
                     }
             
-            HelloView()
+            StatisticsView()
                 .tabItem {
-                    Label("Hello", systemImage: "hand.raised.circle.fill")
+                    Label("В цифрах", systemImage: "chart.bar.xaxis")
                 }
             
             SettingsView(titleOn: $titleOn)

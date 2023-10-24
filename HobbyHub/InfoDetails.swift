@@ -1,9 +1,3 @@
-//
-//  InfoDetails.swift
-//  HobbyHub
-//
-//  Created by Андрей Банин on 9.10.23..
-//
 
 import SwiftUI
 
@@ -30,7 +24,9 @@ struct InfoDetails: View {
                 
                 Divider()
                 
-                Text(post.list)
+                ForEach(post.list, id: \.self) { post in
+                    Text("- \(post)")
+                }
             }
             .padding()
         }
